@@ -17,7 +17,7 @@ CLASS ltcl_master IMPLEMENTATION.
 
   METHOD check.
     DATA(structure) = ztcolab=>execute( ).
-    cl_abap_unit_assert=>assert_equals( exp = 'Hello' act = structure-key ).
+    cl_abap_unit_assert=>assert_equals( exp = 'Hallo' act = structure-key ).
     cl_abap_unit_assert=>assert_equals( exp = 'TCOLAB' act = structure-value ).
     WAIT UP TO 1 SECONDS.
   ENDMETHOD.
